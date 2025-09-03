@@ -1,0 +1,26 @@
+{
+  "name": "zcu",
+  "version": "0.1.0",
+  "description": "zero-config claude-code undo -- A regret medicine of Claude Code for u",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "claude-code",
+    "undo",
+    "zero-config",
+    "regret",
+    "medicine"
+  ],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
