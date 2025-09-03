@@ -1,0 +1,39 @@
+{
+  "name": "@zcu/core",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "ZCU核心库 - Undo/Redo引擎和存储管理",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "level": "catalog:",
+    "nanoid": "catalog:",
+    "simple-git": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@zcu/eslint-config": "workspace:*",
+    "eslint": "catalog:",
+    "typescript": "catalog:",
+    "unbuild": "catalog:",
+    "vitest": "catalog:"
+  }
+}

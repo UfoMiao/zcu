@@ -1,0 +1,33 @@
+{
+  "name": "@zcu/eslint-config",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ESLint configuration for ZCU monorepo",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub",
+    "lint": "echo 'ESLint config package - no linting needed'"
+  },
+  "dependencies": {
+    "@antfu/eslint-config": "catalog:",
+    "defu": "catalog:",
+    "eslint": "catalog:",
+    "eslint-plugin-format": "catalog:"
+  },
+  "devDependencies": {
+    "unbuild": "catalog:"
+  }
+}

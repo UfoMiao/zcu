@@ -1,26 +1,53 @@
 {
   "name": "zcu",
-  "version": "0.1.0",
-  "description": "zero-config claude-code undo -- A regret medicine of Claude Code for u",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.15.1",
+  "description": "Z Claude Undo - Advanced undo/redo for Claude Code",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UfoMiao/zcu.git"
   },
   "keywords": [
     "claude-code",
     "undo",
-    "zero-config",
-    "regret",
-    "medicine"
+    "redo",
+    "ai",
+    "workspace"
   ],
-  "author": "",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": ""
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "typecheck": "turbo run typecheck"
   },
-  "bugs": {
-    "url": ""
+  "catalog": {
+    "level": "^10.0.0",
+    "nanoid": "^5.1.5",
+    "simple-git": "^3.28.0",
+    "@types/node": "^20.19.12",
+    "typescript": "^5.9.2",
+    "unbuild": "^3.6.1",
+    "vitest": "^3.2.4",
+    "@antfu/eslint-config": "^5.2.1",
+    "eslint": "^9.34.0",
+    "eslint-plugin-format": "^1.0.1",
+    "defu": "^6.1.4",
+    "turbo": "^2.5.6"
   },
-  "homepage": ""
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@zcu/eslint-config": "workspace:*",
+    "eslint": "catalog:",
+    "turbo": "catalog:",
+    "typescript": "catalog:"
+  }
 }

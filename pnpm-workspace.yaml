@@ -1,0 +1,24 @@
+packages:
+  - 'packages/*'
+  - 'apps/*'
+
+catalog:
+  '@types/jest': ^30.0.0
+
+  '@types/node': ^20.19.12
+
+  # Database & Storage
+  level: ^10.0.0
+
+  # Utilities
+  nanoid: ^5.1.5
+  # Git operations
+  simple-git: ^3.28.0
+
+  # Core dependencies
+  typescript: ^5.9.2
+  # Build tools
+  unbuild: ^3.6.1
+
+  # Testing
+  vitest: ^3.2.4
