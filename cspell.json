@@ -6,13 +6,19 @@
   "words": [
     "antfu",
     "bmad",
+    "clsx",
     "defu",
     "esbuild",
+    "lucide",
     "miaoda",
     "monorepo",
+    "pathe",
+    "Rollup",
+    "shadcn",
     "taze",
     "turbo",
     "ufomiao",
+    "vitejs",
     "vitest"
   ],
   "ignorePaths": [

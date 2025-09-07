@@ -1,0 +1,45 @@
+{
+  "name": "@ufomiao/unocss-config",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "development": "./src/index.ts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@unocss/postcss": "catalog:ui",
+    "@unocss/preset-icons": "catalog:ui",
+    "@unocss/reset": "catalog:ui",
+    "@unocss/vite": "catalog:ui",
+    "unocss": "catalog:ui",
+    "unocss-preset-shadcn": "catalog:ui"
+  },
+  "devDependencies": {
+    "@ufomiao/eslint-config": "workspace:*",
+    "@ufomiao/tsconfig": "workspace:*",
+    "typescript": "catalog:cli",
+    "unbuild": "catalog:cli"
+  }
+}

@@ -10,8 +10,8 @@
     "base.json",
     "library.json",
     "node.json",
-    "web-app.json",
-    "web.json"
+    "react-app.json",
+    "react-library.json"
   ],
   "devDependencies": {
     "typescript": "catalog:cli",

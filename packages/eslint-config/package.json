@@ -24,7 +24,10 @@
   },
   "dependencies": {
     "@antfu/eslint-config": "catalog:cli",
-    "defu": "catalog:utils"
+    "@eslint-react/eslint-plugin": "catalog:cli",
+    "defu": "catalog:utils",
+    "eslint-plugin-react-hooks": "catalog:cli",
+    "eslint-plugin-react-refresh": "catalog:cli"
   },
   "devDependencies": {
     "eslint": "catalog:cli",
