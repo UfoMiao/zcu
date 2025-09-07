@@ -1,0 +1,187 @@
+{
+  "timestamp": "2025-09-07T21:26:40.000Z",
+  "generator": "ZCU Architecture Initializer",
+  "version": "1.0.0",
+  "project": {
+    "name": "@ufomiao/zcu",
+    "description": "zero-config claude-code undo -- A regret medicine of Claude Code for u",
+    "type": "monorepo",
+    "packageManager": "pnpm",
+    "language": "TypeScript"
+  },
+  "modules": {
+    "apps/cli": {
+      "type": "application",
+      "language": "TypeScript",
+      "status": "in-development",
+      "entry": "src/index.ts",
+      "framework": ["Commander", "Ink"],
+      "dependencies": ["@ufomiao/core", "@ufomiao/types", "@ufomiao/ui"],
+      "hasTests": true,
+      "hasDocumentation": true,
+      "coverage": "high"
+    },
+    "apps/web": {
+      "type": "application",
+      "language": "TypeScript",
+      "status": "planned",
+      "entry": "src/index.ts",
+      "framework": ["React", "Vite"],
+      "dependencies": ["@ufomiao/core", "@ufomiao/ui", "@ufomiao/types"],
+      "hasTests": false,
+      "hasDocumentation": true,
+      "coverage": "medium"
+    },
+    "packages/core": {
+      "type": "library",
+      "language": "TypeScript",
+      "status": "in-development",
+      "entry": "src/index.ts",
+      "framework": ["LevelDB", "simple-git"],
+      "dependencies": ["@ufomiao/types"],
+      "hasTests": false,
+      "hasDocumentation": true,
+      "coverage": "high"
+    },
+    "packages/types": {
+      "type": "types",
+      "language": "TypeScript",
+      "status": "complete",
+      "entry": "src/index.ts",
+      "framework": [],
+      "dependencies": [],
+      "hasTests": false,
+      "hasDocumentation": true,
+      "coverage": "complete"
+    },
+    "packages/ui": {
+      "type": "component-library",
+      "language": "TypeScript",
+      "status": "planned",
+      "entry": "src/index.ts",
+      "framework": ["React", "Radix UI", "UnoCSS"],
+      "dependencies": ["@ufomiao/types", "@ufomiao/unocss-config"],
+      "hasTests": false,
+      "hasDocumentation": true,
+      "coverage": "high"
+    },
+    "packages/i18n": {
+      "type": "utility",
+      "language": "TypeScript",
+      "status": "complete",
+      "entry": "src/index.ts",
+      "framework": ["i18next"],
+      "dependencies": [],
+      "hasTests": false,
+      "hasDocumentation": true,
+      "coverage": "complete"
+    },
+    "packages/eslint-config": {
+      "type": "config",
+      "language": "TypeScript",
+      "status": "complete",
+      "entry": "src/index.ts",
+      "framework": ["ESLint"],
+      "dependencies": ["@antfu/eslint-config"],
+      "hasTests": false,
+      "hasDocumentation": true,
+      "coverage": "complete"
+    },
+    "packages/tsconfig": {
+      "type": "config",
+      "language": "JSON",
+      "status": "complete",
+      "entry": "base.json",
+      "framework": ["TypeScript"],
+      "dependencies": [],
+      "hasTests": false,
+      "hasDocumentation": true,
+      "coverage": "complete"
+    },
+    "packages/unocss-config": {
+      "type": "config",
+      "language": "TypeScript",
+      "status": "complete",
+      "entry": "src/index.ts",
+      "framework": ["UnoCSS"],
+      "dependencies": [],
+      "hasTests": false,
+      "hasDocumentation": true,
+      "coverage": "complete"
+    }
+  },
+  "statistics": {
+    "totalModules": 9,
+    "applicationModules": 2,
+    "libraryModules": 3,
+    "configModules": 3,
+    "utilityModules": 1,
+    "completedModules": 5,
+    "inDevelopmentModules": 2,
+    "plannedModules": 2,
+    "modulesWithDocumentation": 9,
+    "modulesWithTests": 1,
+    "estimatedFiles": 150,
+    "scannedFiles": 45,
+    "coveragePercentage": 85
+  },
+  "coverage": {
+    "overall": "high",
+    "gaps": [
+      "Test implementations needed across most packages",
+      "Core package implementation in progress",
+      "Web application implementation pending",
+      "UI component library implementation pending"
+    ],
+    "strengths": [
+      "Complete documentation for all modules",
+      "Comprehensive type system established",
+      "Consistent configuration across packages",
+      "Well-defined architecture and interfaces"
+    ]
+  },
+  "nextSteps": [
+    "Implement core storage engine and operation processors",
+    "Complete CLI command handlers implementation",
+    "Develop UI component library with cross-platform support",
+    "Add comprehensive test suites across all packages",
+    "Implement Web application with dashboard and management features"
+  ],
+  "ignoreRules": [
+    "node_modules/**",
+    ".git/**",
+    ".github/**",
+    "dist/**",
+    "build/**",
+    ".next/**",
+    "__pycache__/**",
+    "*.lock",
+    "*.log",
+    "*.bin",
+    "*.pdf",
+    "*.png",
+    "*.jpg",
+    "*.jpeg",
+    "*.gif",
+    "*.mp4",
+    "*.zip",
+    "*.tar",
+    "*.gz",
+    ".cache",
+    ".DS_Store",
+    ".idea",
+    "*.tgz",
+    "coverage",
+    "lib-cov",
+    "logs",
+    "temp",
+    ".turbo"
+  ],
+  "truncated": false,
+  "scanMethod": "adaptive",
+  "phases": {
+    "phaseA": "completed - repository inventory and module discovery",
+    "phaseB": "completed - module-priority scanning with targeted analysis",
+    "phaseC": "partially-applied - supplementary scanning for detailed documentation"
+  }
+}
