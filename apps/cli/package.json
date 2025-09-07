@@ -1,0 +1,47 @@
+{
+  "name": "@ufomiao/cli",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "description": "CLI starter application",
+  "author": {
+    "name": "Miao Da",
+    "email": "ufo025174@gmail.com",
+    "url": "https://github.com/WitMiao"
+  },
+  "license": "MIT",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "start": "tsx src/index.ts",
+    "stub": "unbuild --stub"
+  },
+  "devDependencies": {
+    "@antfu/utils": "catalog:inlined",
+    "@types/node": "catalog:types",
+    "@ufomiao/eslint-config": "workspace:*",
+    "@ufomiao/tsconfig": "workspace:*",
+    "tsx": "catalog:cli",
+    "typescript": "catalog:cli",
+    "unbuild": "catalog:cli",
+    "vite": "catalog:cli",
+    "vitest": "catalog:testing",
+    "vitest-package-exports": "catalog:testing",
+    "yaml": "catalog:testing"
+  }
+}

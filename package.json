@@ -1,26 +1,60 @@
 {
-  "name": "zcu",
-  "version": "0.1.0",
+  "name": "@ufomiao/zcu",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.15.1",
   "description": "zero-config claude-code undo -- A regret medicine of Claude Code for u",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": {
+    "name": "Miao Da",
+    "email": "ufo025174@gmail.com",
+    "url": "https://github.com/WitMiao"
   },
-  "keywords": [
-    "claude-code",
-    "undo",
-    "zero-config",
-    "regret",
-    "medicine"
-  ],
-  "author": "",
   "license": "MIT",
+  "homepage": "https://github.com/WitMiao/zcu#readme",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/WitMiao/zcu.git"
   },
-  "bugs": {
-    "url": ""
+  "bugs": "https://github.com/WitMiao/zcu/issues",
+  "keywords": [
+    "monorepo",
+    "starter",
+    "turbo",
+    "typescript"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "release": "pnpm build && changeset publish",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "commitlint": "commitlint",
+    "commitlint:check": "commitlint --from HEAD~1 --to HEAD --verbose",
+    "prepare": "husky",
+    "postinstall": "turbo run stub",
+    "update:deps": "pnpx taze major -r -w",
+    "codemod:catalog": "pnpx codemod pnpm/catalog && eslint pnpm-workspace.yaml --fix"
   },
-  "homepage": ""
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:cli",
+    "@antfu/ni": "catalog:cli",
+    "@changesets/cli": "catalog:cli",
+    "@commitlint/cli": "catalog:cli",
+    "@commitlint/config-conventional": "catalog:cli",
+    "@commitlint/types": "catalog:cli",
+    "@types/node": "catalog:types",
+    "@ufomiao/eslint-config": "workspace:*",
+    "@ufomiao/tsconfig": "workspace:*",
+    "eslint": "catalog:cli",
+    "husky": "catalog:cli",
+    "lint-staged": "catalog:cli",
+    "tinyexec": "catalog:utils",
+    "turbo": "catalog:cli",
+    "typescript": "catalog:cli"
+  }
 }

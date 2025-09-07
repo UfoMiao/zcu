@@ -1,0 +1,20 @@
+{
+  "name": "@ufomiao/tsconfig",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "base.json",
+    "library.json",
+    "node.json",
+    "web-app.json",
+    "web.json"
+  ],
+  "devDependencies": {
+    "typescript": "catalog:cli",
+    "vite": "catalog:cli"
+  }
+}

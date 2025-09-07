@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "language": "en,en-US",
+  "allowCompoundWords": true,
+  "words": [
+    "antfu",
+    "bmad",
+    "defu",
+    "esbuild",
+    "miaoda",
+    "monorepo",
+    "taze",
+    "turbo",
+    "ufomiao",
+    "vitest"
+  ],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/*-dist/**",
+    "**/icons/**",
+    "pnpm-lock.yaml",
+    "**/*.log"
+  ]
+}

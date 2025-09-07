@@ -1,0 +1,3 @@
+{
+  "extends": "@ufomiao/tsconfig/base.json"
+}
