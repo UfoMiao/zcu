@@ -1,0 +1,50 @@
+{
+  "name": "@ufomiao/core",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "description": "ZCU core logic and engine",
+  "author": {
+    "name": "Miao Da",
+    "email": "ufo025174@gmail.com",
+    "url": "https://github.com/WitMiao"
+  },
+  "license": "MIT",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "stub": "unbuild --stub"
+  },
+  "dependencies": {
+    "@ufomiao/types": "workspace:*",
+    "chalk": "catalog:ui",
+    "classic-level": "catalog:ui",
+    "commander": "catalog:ui",
+    "simple-git": "catalog:ui"
+  },
+  "devDependencies": {
+    "@antfu/utils": "catalog:inlined",
+    "@types/node": "catalog:types",
+    "@ufomiao/eslint-config": "workspace:*",
+    "@ufomiao/tsconfig": "workspace:*",
+    "typescript": "catalog:cli",
+    "unbuild": "catalog:cli",
+    "vite": "catalog:cli",
+    "vitest": "catalog:testing"
+  }
+}
