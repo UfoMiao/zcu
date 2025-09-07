@@ -1,7 +1,7 @@
 {
-  "name": "@ufomiao/cli",
+  "name": "zcu",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "description": "CLI starter application",
   "author": {
@@ -31,9 +31,19 @@
     "start": "tsx src/index.ts",
     "stub": "unbuild --stub"
   },
+  "dependencies": {
+    "@ufomiao/core": "workspace:*",
+    "@ufomiao/types": "workspace:*",
+    "@ufomiao/ui": "workspace:*",
+    "chalk": "catalog:ui",
+    "commander": "catalog:ui",
+    "ink": "catalog:ui",
+    "react": "catalog:ui"
+  },
   "devDependencies": {
     "@antfu/utils": "catalog:inlined",
     "@types/node": "catalog:types",
+    "@types/react": "catalog:types",
     "@ufomiao/eslint-config": "workspace:*",
     "@ufomiao/tsconfig": "workspace:*",
     "tsx": "catalog:cli",

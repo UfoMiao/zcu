@@ -1,3 +1,3 @@
-import { eslintCli } from '@ufomiao/eslint-config'
+import { eslintLibrary } from '@ufomiao/eslint-config'
 
-export default eslintCli()
+export default eslintLibrary()

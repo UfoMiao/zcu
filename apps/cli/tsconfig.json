@@ -1,5 +1,5 @@
 {
-  "extends": "@ufomiao/tsconfig/base.json",
+  "extends": "@ufomiao/tsconfig/library.json",
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "dist"
