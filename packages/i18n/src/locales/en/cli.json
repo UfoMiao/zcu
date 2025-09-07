@@ -1,0 +1,15 @@
+{
+  "helpHeader": "ZCU - Zero-Config Claude-Code Undo",
+  "helpDescription": "A regret medicine of Claude Code for u",
+  "usage": "Usage",
+  "commands": "Commands",
+  "options": "Options",
+  "examples": "Examples",
+  "commandNotFound": "Command not found: {{command}}",
+  "seeHelp": "See --help for a list of available commands",
+  "initializingWorkspace": "Initializing workspace...",
+  "workspaceInitialized": "Workspace initialized successfully",
+  "workspaceNotFound": "No ZCU workspace found. Please run 'zcu init' first.",
+  "invalidWorkspace": "Invalid workspace directory",
+  "operationInterrupted": "Operation interrupted by user"
+}

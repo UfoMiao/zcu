@@ -1,0 +1,72 @@
+{
+  "undo": {
+    "title": "ZCU Undo",
+    "description": "Undo the most recent operations",
+    "previewMode": "Preview mode",
+    "interactiveMode": "Interactive undo mode",
+    "completed": "Undo operation completed",
+    "failed": "Undo failed",
+    "noOperations": "No operations to undo",
+    "confirmUndo": "Are you sure you want to undo {{count}} operation(s)?",
+    "undoingOperations": "Undoing {{count}} operation(s)...",
+    "developmentNote": "Core undo logic is under development..."
+  },
+  "redo": {
+    "title": "ZCU Redo",
+    "description": "Redo previously undone operations",
+    "previewMode": "Preview mode",
+    "interactiveMode": "Interactive redo mode",
+    "completed": "Redo operation completed",
+    "failed": "Redo failed",
+    "noOperations": "No operations to redo",
+    "confirmRedo": "Are you sure you want to redo {{count}} operation(s)?",
+    "redoingOperations": "Redoing {{count}} operation(s)...",
+    "developmentNote": "Core redo logic is under development..."
+  },
+  "checkpoint": {
+    "title": "ZCU Checkpoint",
+    "description": "Create a new checkpoint",
+    "created": "Checkpoint created",
+    "failed": "Checkpoint creation failed",
+    "nameLabel": "Checkpoint name",
+    "descriptionLabel": "Description",
+    "includingUntracked": "Including untracked files",
+    "forceEnabled": "Force mode enabled",
+    "creatingCheckpoint": "Creating checkpoint...",
+    "developmentNote": "Core checkpoint logic is under development..."
+  },
+  "list": {
+    "title": "ZCU Checkpoints List",
+    "description": "List all available checkpoints",
+    "showingAll": "Showing all checkpoints (including deleted)",
+    "showingLatest": "Showing latest {{limit}} checkpoints",
+    "noCheckpoints": "No checkpoints found",
+    "failed": "List operation failed",
+    "developmentNote": "Checkpoint listing functionality is under development..."
+  },
+  "restore": {
+    "title": "ZCU Restore",
+    "description": "Restore to a specific checkpoint",
+    "nameRequired": "Checkpoint name is required",
+    "restoring": "Restoring to checkpoint",
+    "completed": "Restored to checkpoint",
+    "failed": "Restore failed",
+    "previewMode": "Preview mode",
+    "forceEnabled": "Force mode enabled",
+    "confirmRestore": "Are you sure you want to restore to checkpoint '{{name}}'?",
+    "developmentNote": "Core restore logic is under development..."
+  },
+  "status": {
+    "title": "ZCU Status",
+    "description": "Show current workspace status",
+    "verboseMode": "Verbose mode",
+    "currentWorkspace": "Current workspace",
+    "activeSession": "Active session",
+    "lastCheckpoint": "Last checkpoint",
+    "pendingOperations": "Pending operations",
+    "projectStructure": "Project structure",
+    "completed": "Status information retrieved",
+    "failed": "Status operation failed",
+    "developmentNote": "Enhanced status functionality is under development..."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "helpHeader": "ZCU - 零配置Claude代码撤销工具",
+  "helpDescription": "Claude Code的后悔药",
+  "usage": "用法",
+  "commands": "命令",
+  "options": "选项",
+  "examples": "示例",
+  "commandNotFound": "命令未找到：{{command}}",
+  "seeHelp": "使用 --help 查看可用命令列表",
+  "initializingWorkspace": "正在初始化工作空间...",
+  "workspaceInitialized": "工作空间初始化成功",
+  "workspaceNotFound": "未找到ZCU工作空间。请先运行 'zcu init'。",
+  "invalidWorkspace": "无效的工作空间目录",
+  "operationInterrupted": "操作被用户中断"
+}
