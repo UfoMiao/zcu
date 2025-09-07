@@ -1,0 +1,71 @@
+{
+  "name": "@ufomiao/ui",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "description": "ZCU shared UI components for CLI and Web",
+  "author": {
+    "name": "Miao Da",
+    "email": "ufo025174@gmail.com",
+    "url": "https://github.com/WitMiao"
+  },
+  "license": "MIT",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "stub": "unbuild --stub"
+  },
+  "dependencies": {
+    "@radix-ui/react-accordion": "catalog:ui",
+    "@radix-ui/react-alert-dialog": "catalog:ui",
+    "@radix-ui/react-avatar": "catalog:ui",
+    "@radix-ui/react-checkbox": "catalog:ui",
+    "@radix-ui/react-dialog": "catalog:ui",
+    "@radix-ui/react-dropdown-menu": "catalog:ui",
+    "@radix-ui/react-icons": "catalog:ui",
+    "@radix-ui/react-label": "catalog:ui",
+    "@radix-ui/react-popover": "catalog:ui",
+    "@radix-ui/react-select": "catalog:ui",
+    "@radix-ui/react-separator": "catalog:ui",
+    "@radix-ui/react-slot": "catalog:ui",
+    "@radix-ui/react-switch": "catalog:ui",
+    "@radix-ui/react-tabs": "catalog:ui",
+    "@radix-ui/react-toast": "catalog:ui",
+    "@radix-ui/react-tooltip": "catalog:ui",
+    "@ufomiao/types": "workspace:*",
+    "@ufomiao/unocss-config": "workspace:*",
+    "class-variance-authority": "catalog:ui",
+    "clsx": "catalog:ui",
+    "enquirer": "catalog:ui",
+    "ink": "catalog:ui",
+    "lucide-react": "catalog:ui",
+    "react": "catalog:ui",
+    "tailwind-merge": "catalog:ui"
+  },
+  "devDependencies": {
+    "@antfu/utils": "catalog:inlined",
+    "@types/node": "catalog:types",
+    "@types/react": "catalog:types",
+    "@ufomiao/eslint-config": "workspace:*",
+    "@ufomiao/tsconfig": "workspace:*",
+    "typescript": "catalog:cli",
+    "unbuild": "catalog:cli",
+    "vite": "catalog:cli",
+    "vitest": "catalog:testing"
+  }
+}
