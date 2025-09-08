@@ -28,6 +28,9 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest",
     "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "test:watch": "vitest --watch",
     "stub": "unbuild --stub"
   },
   "devDependencies": {
@@ -38,6 +41,7 @@
     "typescript": "catalog:cli",
     "unbuild": "catalog:cli",
     "vite": "catalog:cli",
-    "vitest": "catalog:testing"
+    "vitest": "catalog:testing",
+    "vitest-package-exports": "catalog:testing"
   }
 }

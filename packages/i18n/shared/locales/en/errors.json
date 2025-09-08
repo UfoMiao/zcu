@@ -1,0 +1,16 @@
+{
+  "storage_not_initialized": "Storage not initialized",
+  "storage_already_initialized": "Storage already initialized",
+  "undo_failed": "Undo failed",
+  "redo_failed": "Redo failed",
+  "checkpoint_failed": "Checkpoint failed",
+  "restore_failed": "Restore failed",
+  "checkpoint_not_found": "Checkpoint {{checkpointId}} not found",
+  "simulated_redo_error": "Simulated redo error",
+  "string_error_for_testing": "String error for testing",
+  "unknown_error": "Unknown error",
+  "file_not_found": "File not found",
+  "permission_denied": "Permission denied",
+  "network_error": "Network error",
+  "operation_cancelled": "Operation cancelled by user"
+}

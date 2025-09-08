@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@ufomiao/core": "workspace:*",
+    "@ufomiao/i18n-node": "workspace:*",
     "@ufomiao/types": "workspace:*",
     "@ufomiao/ui": "workspace:*",
     "chalk": "catalog:ui",

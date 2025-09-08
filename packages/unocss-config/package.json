@@ -31,6 +31,7 @@
   "dependencies": {
     "@unocss/postcss": "catalog:ui",
     "@unocss/preset-icons": "catalog:ui",
+    "@unocss/preset-wind4": "catalog:ui",
     "@unocss/reset": "catalog:ui",
     "@unocss/vite": "catalog:ui",
     "unocss": "catalog:ui",

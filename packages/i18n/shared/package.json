@@ -1,0 +1,36 @@
+{
+  "name": "@ufomiao/i18n-shared",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "description": "ZCU shared translation resources",
+  "author": {
+    "name": "Miao Da",
+    "email": "ufo025174@gmail.com",
+    "url": "https://github.com/WitMiao"
+  },
+  "license": "MIT",
+  "exports": {
+    "./locales/*": "./dist/locales/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "devDependencies": {
+    "@ufomiao/eslint-config": "workspace:*",
+    "@ufomiao/tsconfig": "workspace:*",
+    "typescript": "catalog:cli",
+    "unbuild": "catalog:cli",
+    "vitest": "catalog:testing"
+  }
+}

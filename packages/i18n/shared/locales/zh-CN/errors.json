@@ -1,0 +1,16 @@
+{
+  "storage_not_initialized": "存储未初始化",
+  "storage_already_initialized": "存储已经初始化",
+  "undo_failed": "撤销操作失败",
+  "redo_failed": "重做操作失败",
+  "checkpoint_failed": "创建检查点失败",
+  "restore_failed": "恢复操作失败",
+  "checkpoint_not_found": "未找到检查点 {{checkpointId}}",
+  "simulated_redo_error": "模拟重做错误",
+  "string_error_for_testing": "字符串测试错误",
+  "unknown_error": "未知错误",
+  "file_not_found": "文件未找到",
+  "permission_denied": "权限被拒绝",
+  "network_error": "网络错误",
+  "operation_cancelled": "操作被用户取消"
+}

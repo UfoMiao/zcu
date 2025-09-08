@@ -1,10 +1,10 @@
 import type { UserConfig } from 'unocss'
+import presetWind4 from '@unocss/preset-wind4'
 import {
   defineConfig,
   mergeConfigs,
   presetIcons,
   presetTypography,
-  presetWind4,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -12,12 +12,13 @@ import { presetShadcn } from 'unocss-preset-shadcn'
 
 const baseConfig: UserConfig = {
   presets: [
-    presetWind4(),
-    presetTypography(),
-    presetIcons({
-      scale: 1.2,
-      warn: true,
+    presetWind4({
+      preflights: {
+        reset: true,
+      },
     }),
+    presetTypography(),
+    presetIcons(),
     presetShadcn(),
   ],
   transformers: [

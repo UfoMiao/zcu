@@ -20,8 +20,9 @@
   },
   "dependencies": {
     "@ufomiao/core": "workspace:*",
+    "@ufomiao/i18n-react": "workspace:*",
     "@ufomiao/types": "workspace:*",
-    "@ufomiao/ui": "workspace:*",
+    "@ufomiao/ui-react": "workspace:*",
     "react": "catalog:ui",
     "react-dom": "catalog:ui"
   },
@@ -33,6 +34,7 @@
     "@ufomiao/unocss-config": "workspace:*",
     "@vitejs/plugin-react": "catalog:ui",
     "typescript": "catalog:cli",
+    "unocss": "catalog:ui",
     "vite": "catalog:cli"
   }
 }

@@ -1,0 +1,5 @@
+{
+  "extends": "@ufomiao/tsconfig/react-library",
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,4 +1,5 @@
 import process from 'node:process'
+import { i18n, initI18nForNode } from '@ufomiao/i18n-node'
 /**
  * ZCU Redo Command Handler
  */
@@ -12,25 +13,29 @@ export interface RedoCliOptions {
 
 export async function handleRedo(options: RedoCliOptions): Promise<void> {
   try {
-    console.log(chalk.blue('🔄 ZCU Redo'))
+    // Initialize i18n before using translation functions
+    await initI18nForNode()
+
+    console.log(chalk.blue(`🔄 ${i18n.t('commands:redo_title')}`))
 
     if (options.preview) {
-      console.log(chalk.yellow('📋 Preview mode'))
-      console.log(chalk.gray('Preview functionality is under development...'))
+      console.log(chalk.yellow(`📋 ${i18n.t('messages:preview_mode')}`))
+      console.log(chalk.gray(i18n.t('messages:preview_functionality')))
       return
     }
 
     if (options.interactive) {
-      console.log(chalk.cyan('🎯 Interactive redo mode'))
-      console.log(chalk.gray('Interactive selection functionality is under development...'))
+      console.log(chalk.cyan(`🎯 ${i18n.t('messages:interactive_redo_mode')}`))
+      console.log(chalk.gray(i18n.t('messages:interactive_selection')))
       return
     }
 
-    console.log(chalk.green('✅ Redo operation completed'))
-    console.log(chalk.gray('Core redo logic is under development...'))
+    console.log(chalk.green(`✅ ${i18n.t('messages:redo_operation_completed')}`))
+    console.log(chalk.gray(i18n.t('messages:core_redo_logic')))
   }
   catch (error) {
-    console.error(chalk.red('❌ Redo failed:'), error)
+    await initI18nForNode()
+    console.error(chalk.red(`❌ ${i18n.t('errors:redo_failed')}:`), error)
     process.exit(1)
   }
 }

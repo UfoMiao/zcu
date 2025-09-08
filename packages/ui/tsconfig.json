@@ -2,11 +2,13 @@
   "extends": "@ufomiao/tsconfig/react-library.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "types": ["node"],
     "outDir": "dist"
   },
   "include": [
     "src/**/*",
-    "test/**/*"
+    "test/**/*",
+    "package.json"
   ],
   "exclude": [
     "node_modules",

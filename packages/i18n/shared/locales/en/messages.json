@@ -1,0 +1,18 @@
+{
+  "operation_completed": "Operation completed",
+  "undo_operation_completed": "Undo operation completed",
+  "redo_operation_completed": "Redo operation completed",
+  "checkpoint_created": "Checkpoint created: {{name}}",
+  "checkpoint_restored": "Checkpoint restored: {{name}}",
+  "saving_checkpoint": "Saving checkpoint: {{name}}",
+  "operation_success": "Operation successful",
+  "operation_failed": "Operation failed: {{error}}",
+  "preview_mode": "Preview mode",
+  "preview_functionality": "Preview functionality is under development...",
+  "interactive_undo_mode": "Interactive undo mode",
+  "interactive_redo_mode": "Interactive redo mode",
+  "interactive_selection": "Interactive selection functionality is under development...",
+  "core_undo_logic": "Core undo logic is under development...",
+  "core_redo_logic": "Core redo logic is under development...",
+  "development_mode": "This feature is under development..."
+}

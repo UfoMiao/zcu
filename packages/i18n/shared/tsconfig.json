@@ -1,0 +1,14 @@
+{
+  "extends": "@ufomiao/tsconfig/library",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.json"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}

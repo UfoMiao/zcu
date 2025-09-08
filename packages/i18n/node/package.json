@@ -1,0 +1,48 @@
+{
+  "name": "@ufomiao/i18n-node",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "description": "ZCU i18n for Node.js/CLI environments",
+  "author": {
+    "name": "Miao Da",
+    "email": "ufo025174@gmail.com",
+    "url": "https://github.com/WitMiao"
+  },
+  "license": "MIT",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "stub": "unbuild --stub"
+  },
+  "dependencies": {
+    "@ufomiao/i18n-core": "workspace:*",
+    "@ufomiao/i18n-shared": "workspace:*",
+    "i18next": "catalog:utils",
+    "i18next-fs-backend": "catalog:utils",
+    "pathe": "catalog:utils"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:types",
+    "@ufomiao/eslint-config": "workspace:*",
+    "@ufomiao/tsconfig": "workspace:*",
+    "typescript": "catalog:cli",
+    "unbuild": "catalog:cli",
+    "vitest": "catalog:testing"
+  }
+}

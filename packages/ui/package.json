@@ -47,6 +47,7 @@
     "@radix-ui/react-tabs": "catalog:ui",
     "@radix-ui/react-toast": "catalog:ui",
     "@radix-ui/react-tooltip": "catalog:ui",
+    "@ufomiao/i18n-react": "workspace:*",
     "@ufomiao/types": "workspace:*",
     "@ufomiao/unocss-config": "workspace:*",
     "class-variance-authority": "catalog:ui",

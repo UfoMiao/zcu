@@ -2,6 +2,7 @@
   "extends": "@ufomiao/tsconfig/react-app.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "types": ["node"],
     "outDir": "dist"
   },
   "include": [

@@ -1,0 +1,18 @@
+{
+  "operation_completed": "操作完成",
+  "undo_operation_completed": "撤销操作完成",
+  "redo_operation_completed": "重做操作完成",
+  "checkpoint_created": "检查点已创建：{{name}}",
+  "checkpoint_restored": "检查点已恢复：{{name}}",
+  "saving_checkpoint": "正在保存检查点：{{name}}",
+  "operation_success": "操作成功",
+  "operation_failed": "操作失败：{{error}}",
+  "preview_mode": "预览模式",
+  "preview_functionality": "预览功能正在开发中...",
+  "interactive_undo_mode": "交互式撤销模式",
+  "interactive_redo_mode": "交互式重做模式",
+  "interactive_selection": "交互式选择功能正在开发中...",
+  "core_undo_logic": "核心撤销逻辑正在开发中...",
+  "core_redo_logic": "核心重做逻辑正在开发中...",
+  "development_mode": "此功能正在开发中..."
+}

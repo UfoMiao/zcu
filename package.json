@@ -30,6 +30,9 @@
     "lint:fix": "turbo run lint:fix",
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
+    "test:coverage": "turbo run test:coverage",
+    "test:ui": "turbo run test:ui",
+    "test:watch": "turbo run test:watch",
     "release": "pnpm build && changeset publish",
     "changeset": "changeset",
     "version": "changeset version",
@@ -54,6 +57,7 @@
     "husky": "catalog:cli",
     "lint-staged": "catalog:cli",
     "tinyexec": "catalog:utils",
+    "tsx": "catalog:cli",
     "turbo": "catalog:cli",
     "typescript": "catalog:cli"
   }

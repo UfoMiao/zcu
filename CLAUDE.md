@@ -159,6 +159,25 @@ zcu status --verbose
 - **Absolute Imports**: Use workspace paths for cross-package imports
 - **Type Imports**: Explicit `import type` declarations
 
+## Core Development Principles
+
+### Monorepo Standards
+- **Package Management**: Use pnpm with catalogs, `workspace:*` for internal dependencies
+- **Module Architecture**: Clear separation between `apps/*` (applications) and `packages/*` (reusable modules)  
+- **Build System**: Turbo for task orchestration, proper pipeline dependencies
+
+### Documentation & Language
+- **Code Documentation**: English for all code comments, API docs, and commit messages
+- **User Interface**: Bilingual support (zh-CN/en) via i18next with namespace organization
+- **Technical Docs**: English for README and technical documentation
+
+### Development Standards
+- **Test-Driven Development**: Write tests BEFORE implementation, 80% minimum coverage
+- **Test Types**: `*.test.ts` (unit), `*.integration.test.ts` (cross-module), `exports.test.ts` (API)
+- **Type Safety**: Strict TypeScript, explicit type imports, comprehensive definitions in `packages/types`
+- **Code Quality Assurance**: After every code edit, ensure TypeScript compilation (`pnpm typecheck`) and ESLint validation (`pnpm lint`) pass successfully
+- **Quality**: Follow SOLID principles, maintain consistency across error handling and patterns
+
 ## AI Development Guidelines
 
 ### AI Interaction Best Practices
